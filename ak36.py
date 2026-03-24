@@ -58,8 +58,8 @@ def get_excel_value(row, col):
 def login(driver):
     wait = WebDriverWait(driver, 30)
     driver.get("https://smartled.in/Installation/index.php")
-    wait.until(EC.element_to_be_clickable((By.ID, "input-1"))).send_keys("jaiauto.ins")
-    driver.find_element(By.ID, "input-2").send_keys("2025")
+    wait.until(EC.element_to_be_clickable((By.ID, "input-1"))).send_keys("jaiauto.******")
+    driver.find_element(By.ID, "input-2").send_keys("*****")
     safe_click(driver, By.XPATH, "//button[text()='Login']")
     wait.until(EC.url_contains("Dashboard.php"))
 
